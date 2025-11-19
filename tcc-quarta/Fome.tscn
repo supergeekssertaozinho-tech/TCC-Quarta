@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://c84rarpi34b7x"]
+
+[ext_resource type="Script" uid="uid://bolat0xeudmow" path="res://fome.gd" id="1_lb8ys"]
+[ext_resource type="FontFile" uid="uid://tgjj535b7evd" path="res://Rye-Regular.ttf" id="2_ppnyr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8jarx"]
+font = ExtResource("2_ppnyr")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lb8ys")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 572.0
+offset_right = 1152.0
+offset_bottom = 612.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 572.0
+offset_right = 1152.0
+offset_bottom = 612.0
+text = "Fome"
+label_settings = SubResource("LabelSettings_8jarx")
+horizontal_alignment = 1
+vertical_alignment = 1
