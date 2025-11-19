@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://d14g0d2ov8h8p"]
+
+[ext_resource type="Texture2D" uid="uid://s2q4ok5m00pd" path="res://donote-Sheet.png" id="1_ma2mq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl81w"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rgpn"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nl8"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dtnr"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c33a7"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqxq1"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l08u0"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrb8d"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0hmu"]
+atlas = ExtResource("1_ma2mq")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gc2bs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dl81w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rgpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dtnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c33a7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqxq1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l08u0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrb8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0hmu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8sypo"]
+radius = 16.03122
+
+[node name="Donut" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_gc2bs")
+frame_progress = 0.82189316
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8sypo")
