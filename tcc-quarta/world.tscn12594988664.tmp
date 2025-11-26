@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://vd0r7l5b40tu"]
+
+[ext_resource type="PackedScene" uid="uid://c84rarpi34b7x" path="res://Fome.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://dfwev86h7m2qf" path="res://Player/player.tscn" id="2_tlwt5"]
+
+[node name="world" type="Node2D"]
+
+[node name="Control" parent="." instance=ExtResource("1_fj7yv")]
+decrease_rate = 50.0
+
+[node name="Player" parent="." instance=ExtResource("2_tlwt5")]
