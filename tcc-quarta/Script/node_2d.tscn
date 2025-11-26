@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3 uid="uid://2t1t7brdn5e"]
+
+[ext_resource type="Texture2D" uid="uid://cqcrpaw08st8m" path="res://icon.svg" id="1_5qm3q"]
+
+[sub_resource type="GDScript" id="GDScript_t5nie"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1tkd"]
+atlas = ExtResource("1_5qm3q")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isryg"]
+atlas = ExtResource("1_5qm3q")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta0fp"]
+atlas = ExtResource("1_5qm3q")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otjbt"]
+atlas = ExtResource("1_5qm3q")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_abc0r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1tkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isryg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta0fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otjbt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gqiv"]
+size = Vector2(25, 28)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = SubResource("GDScript_t5nie")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_abc0r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3gqiv")

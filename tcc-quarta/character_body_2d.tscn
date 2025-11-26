@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=3 uid="uid://dbxx5len210jd"]
+
+[ext_resource type="Texture2D" uid="uid://cqcrpaw08st8m" path="res://icon.svg" id="1_pdk6n"]
+
+[sub_resource type="GDScript" id="GDScript_g8u2e"]
+script/source = "extends CharacterBody2D
+
+@export var speed: float = 200.0
+@export var jump_force: float = 400.0
+@export var gravity: float = 900.0
+
+@onready var jump_sound: AudioStreamPlayer2D = $\"../JumpSound\"	 
+
+func _physics_process(delta):
+	var input_dir = Input.get_axis(\"ui_left\", \"ui_right\")
+	velocity.x = input_dir * speed
+
+	# Aplicar gravidade
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	# Pulo
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = -jump_force
+		if jump_sound:
+			jump_sound.play(1)
+
+	move_and_slide()
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpnhg"]
+atlas = ExtResource("1_pdk6n")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tt28q"]
+atlas = ExtResource("1_pdk6n")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwf1q"]
+atlas = ExtResource("1_pdk6n")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v40vd"]
+atlas = ExtResource("1_pdk6n")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5cm64"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpnhg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tt28q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwf1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v40vd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fddgw"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = SubResource("GDScript_g8u2e")
+
+[node name="CharacterBody2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5cm64")
+frame = 2
+frame_progress = 0.762517
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fddgw")
