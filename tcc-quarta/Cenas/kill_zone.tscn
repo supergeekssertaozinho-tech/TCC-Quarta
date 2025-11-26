@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr6pm8uibpgwb"]
+
+[ext_resource type="Script" uid="uid://c7rfu7tl7t86d" path="res://Script/kill_zone.gd" id="1_bo3d4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wogrg"]
+
+[node name="kill zone" type="Area2D"]
+script = ExtResource("1_bo3d4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_wogrg")
+debug_color = Color(0.7837421, 0, 0.13541397, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
