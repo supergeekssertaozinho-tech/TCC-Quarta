@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctl7n8pu02afc"
-path="res://.godot/imported/Bala.png-284c3dd30a040c0d6b1f573002617ff4.ctex"
+uid="uid://wcygocha3yt7"
+path="res://.godot/imported/Picole.png-66ca6c135bd5302c9092e60dafc7ded6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bala.png"
-dest_files=["res://.godot/imported/Bala.png-284c3dd30a040c0d6b1f573002617ff4.ctex"]
+source_file="res://2Ds/Picole.png"
+dest_files=["res://.godot/imported/Picole.png-66ca6c135bd5302c9092e60dafc7ded6.ctex"]
 
 [params]
 

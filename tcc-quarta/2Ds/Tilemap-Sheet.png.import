@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0jf84ylu3im5"
-path="res://.godot/imported/Brigadeiro.png-e6b2fa8e7d0621897baf100ce2225ef5.ctex"
+uid="uid://d3nanbo6u41pb"
+path="res://.godot/imported/Tilemap-Sheet.png-72924eac6bcf623a45e1d60247100b50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Brigadeiro.png"
-dest_files=["res://.godot/imported/Brigadeiro.png-e6b2fa8e7d0621897baf100ce2225ef5.ctex"]
+source_file="res://2Ds/Tilemap-Sheet.png"
+dest_files=["res://.godot/imported/Tilemap-Sheet.png-72924eac6bcf623a45e1d60247100b50.ctex"]
 
 [params]
 

@@ -17,7 +17,7 @@ var start_position: Vector2
 var player_ref: Node = null
 
 # --- Referências que EXISTEM ---
-@onready var sprite: Sprite2D = $Sprite2D
+@onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var detection_area: Area2D = $Area2D
 @onready var floor_check: RayCast2D = $RayCast2D
 
@@ -69,7 +69,7 @@ func _patrol() -> void:
 			moving_right = not moving_right
 
 	# Flip horizontal
-	sprite.flip_h = not moving_right
+	animation.flip_h = not moving_right
 
 # --- Ataque ---
 func _attack() -> void:
@@ -79,7 +79,7 @@ func _attack() -> void:
 
 	var direction = sign(player_ref.global_position.x - global_position.x)
 	velocity.x = direction * move_speed * 1.6
-	sprite.flip_h = direction < 0
+	animation.flip_h = direction < 0
 
 # --- Fuga ---
 func _flee() -> void:
@@ -89,7 +89,7 @@ func _flee() -> void:
 
 	var direction = -sign(player_ref.global_position.x - global_position.x)
 	velocity.x = direction * move_speed * 1.4
-	sprite.flip_h = direction < 0
+	animation.flip_h = direction < 0
 
 # --- Detecção ---
 func _on_detection_area_body_entered(body: Node) -> void:

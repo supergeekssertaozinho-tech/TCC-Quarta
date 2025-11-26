@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk1qnx0xv4ase"
-path="res://.godot/imported/Cereja1.png-81f201cc9ebaa730eda65b388ec51bc2.ctex"
+uid="uid://2se8hoixcgq"
+path="res://.godot/imported/WWs.png-bf2dc21a97d827611a9d9d171cbd7806.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cereja1.png"
-dest_files=["res://.godot/imported/Cereja1.png-81f201cc9ebaa730eda65b388ec51bc2.ctex"]
+source_file="res://2Ds/WWs.png"
+dest_files=["res://.godot/imported/WWs.png-bf2dc21a97d827611a9d9d171cbd7806.ctex"]
 
 [params]
 

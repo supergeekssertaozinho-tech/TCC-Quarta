@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3nanbo6u41pb"
-path="res://.godot/imported/Tilemap-Sheet.png-2fd3a4da1072c7f403fcab3ad2ccbd00.ctex"
+uid="uid://ctl7n8pu02afc"
+path="res://.godot/imported/Bala.png-dec43db36844717b7a81245f74357aeb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap-Sheet.png"
-dest_files=["res://.godot/imported/Tilemap-Sheet.png-2fd3a4da1072c7f403fcab3ad2ccbd00.ctex"]
+source_file="res://2Ds/Bala.png"
+dest_files=["res://.godot/imported/Bala.png-dec43db36844717b7a81245f74357aeb.ctex"]
 
 [params]
 

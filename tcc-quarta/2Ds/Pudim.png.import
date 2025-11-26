@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwllnsukjdvak"
-path="res://.godot/imported/Candy1.png-901e2b43e4b66f2e97d6b7a45a03de9b.ctex"
+uid="uid://d2ioa02pt1hal"
+path="res://.godot/imported/Pudim.png-183cf2fd990eb2ae2230aa03a6c46450.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Candy1.png"
-dest_files=["res://.godot/imported/Candy1.png-901e2b43e4b66f2e97d6b7a45a03de9b.ctex"]
+source_file="res://2Ds/Pudim.png"
+dest_files=["res://.godot/imported/Pudim.png-183cf2fd990eb2ae2230aa03a6c46450.ctex"]
 
 [params]
 

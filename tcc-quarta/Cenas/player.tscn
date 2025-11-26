@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://dfwev86h7m2qf"]
+
+[ext_resource type="Script" uid="uid://c1hqraavxudyu" path="res://Script/player.gd" id="1_4ntmi"]
+[ext_resource type="Texture2D" uid="uid://bgam6kknedlk5" path="res://2Ds/Coxiry.png" id="2_4ntmi"]
+[ext_resource type="PackedScene" uid="uid://c84rarpi34b7x" path="res://Cenas/Fome.tscn" id="3_btcbx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btcbx"]
+atlas = ExtResource("2_4ntmi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwnis"]
+atlas = ExtResource("2_4ntmi")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k53q1"]
+atlas = ExtResource("2_4ntmi")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qtieq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btcbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwnis")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6eg3q"]
+size = Vector2(15, 32)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_4ntmi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -1)
+sprite_frames = SubResource("SpriteFrames_qtieq")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.02381803
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_6eg3q")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Fome" parent="." instance=ExtResource("3_btcbx")]
+offset_left = -576.0
+offset_top = -288.0
+offset_right = -576.0
+offset_bottom = -288.0

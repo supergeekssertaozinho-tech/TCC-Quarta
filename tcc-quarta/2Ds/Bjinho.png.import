@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2ioa02pt1hal"
-path="res://.godot/imported/Pudim.png-39059cac99f27f7fb04f02f1f70f7071.ctex"
+uid="uid://d0gytkxuxi8x1"
+path="res://.godot/imported/Bjinho.png-d2c6fb98139673b52cd33815cb897795.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pudim.png"
-dest_files=["res://.godot/imported/Pudim.png-39059cac99f27f7fb04f02f1f70f7071.ctex"]
+source_file="res://2Ds/Bjinho.png"
+dest_files=["res://.godot/imported/Bjinho.png-d2c6fb98139673b52cd33815cb897795.ctex"]
 
 [params]
 

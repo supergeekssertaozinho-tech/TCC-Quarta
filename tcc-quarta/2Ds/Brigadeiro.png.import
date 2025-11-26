@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wcygocha3yt7"
-path="res://.godot/imported/Picole.png-4a58b8b44313c6e7f464dbb1ac730494.ctex"
+uid="uid://b0jf84ylu3im5"
+path="res://.godot/imported/Brigadeiro.png-0974e7f6e866f221c8c4c4a17cef0a41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Picole.png"
-dest_files=["res://.godot/imported/Picole.png-4a58b8b44313c6e7f464dbb1ac730494.ctex"]
+source_file="res://2Ds/Brigadeiro.png"
+dest_files=["res://.godot/imported/Brigadeiro.png-0974e7f6e866f221c8c4c4a17cef0a41.ctex"]
 
 [params]
 

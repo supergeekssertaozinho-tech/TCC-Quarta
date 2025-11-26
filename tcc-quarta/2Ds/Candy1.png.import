@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgam6kknedlk5"
-path="res://.godot/imported/Coxiry.png-de8770deb6e38c850fcf950398e6df64.ctex"
+uid="uid://bwllnsukjdvak"
+path="res://.godot/imported/Candy1.png-efa85bbcfbd40d9fa7dc1f313d0e9b57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Coxiry.png"
-dest_files=["res://.godot/imported/Coxiry.png-de8770deb6e38c850fcf950398e6df64.ctex"]
+source_file="res://2Ds/Candy1.png"
+dest_files=["res://.godot/imported/Candy1.png-efa85bbcfbd40d9fa7dc1f313d0e9b57.ctex"]
 
 [params]
 

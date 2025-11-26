@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2se8hoixcgq"
-path="res://.godot/imported/WWs.png-b82e4f3bfe16b3552bf4f30e0e963898.ctex"
+uid="uid://bgam6kknedlk5"
+path="res://.godot/imported/Coxiry.png-a85e75c6e5b58088bfe772bc415abaae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://WWs.png"
-dest_files=["res://.godot/imported/WWs.png-b82e4f3bfe16b3552bf4f30e0e963898.ctex"]
+source_file="res://2Ds/Coxiry.png"
+dest_files=["res://.godot/imported/Coxiry.png-a85e75c6e5b58088bfe772bc415abaae.ctex"]
 
 [params]
 

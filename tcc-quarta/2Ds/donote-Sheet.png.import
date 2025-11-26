@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rur12205o5fw"
-path="res://.godot/imported/EggFlower1.png-1b887fb5954d9be6d3799ac93a7bda35.ctex"
+uid="uid://s2q4ok5m00pd"
+path="res://.godot/imported/donote-Sheet.png-75d638d8dc6f540729d9395405d3ade7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EggFlower1.png"
-dest_files=["res://.godot/imported/EggFlower1.png-1b887fb5954d9be6d3799ac93a7bda35.ctex"]
+source_file="res://2Ds/donote-Sheet.png"
+dest_files=["res://.godot/imported/donote-Sheet.png-75d638d8dc6f540729d9395405d3ade7.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0gytkxuxi8x1"
-path="res://.godot/imported/Bjinho.png-1636358deb2cf41f3dccc5ba264e8710.ctex"
+uid="uid://bk1qnx0xv4ase"
+path="res://.godot/imported/Cereja1.png-97ac086e8eab247e28fd2db71a9f91c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bjinho.png"
-dest_files=["res://.godot/imported/Bjinho.png-1636358deb2cf41f3dccc5ba264e8710.ctex"]
+source_file="res://2Ds/Cereja1.png"
+dest_files=["res://.godot/imported/Cereja1.png-97ac086e8eab247e28fd2db71a9f91c5.ctex"]
 
 [params]
 
