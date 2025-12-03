@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://o06yrp7s3hfj"]
+[gd_scene load_steps=14 format=3 uid="uid://o06yrp7s3hfj"]
 
 [ext_resource type="Texture2D" uid="uid://s2q4ok5m00pd" path="res://2Ds/donote-Sheet.png" id="1_ma2mq"]
+[ext_resource type="Script" uid="uid://w8pmmglo4hbb" path="res://Script/donut.gd" id="1_y8dpl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dl81w"]
 atlas = ExtResource("1_ma2mq")
@@ -77,6 +78,7 @@ animations = [{
 radius = 16.03122
 
 [node name="Donut" type="Area2D"]
+script = ExtResource("1_y8dpl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -86,3 +88,5 @@ frame_progress = 0.82189316
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_8sypo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

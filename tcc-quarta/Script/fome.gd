@@ -22,6 +22,5 @@ func _process(delta: float) -> void:
 		bar.size.x = 0
 		emit_signal("hunger_zero")  # sinal de fome zerada
 
-
 func get_hunger_value() -> float:
 	return bar.size.x

@@ -36,8 +36,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6eg3q"]
 size = Vector2(15, 32)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("hunger_system") groups=["Player"]]
 script = ExtResource("1_4ntmi")
+hunger_system = NodePath("Fome")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -1)
@@ -57,3 +58,4 @@ offset_left = -576.0
 offset_top = -288.0
 offset_right = -576.0
 offset_bottom = -288.0
+decrease_rate = 5.0
