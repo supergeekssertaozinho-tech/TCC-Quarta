@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c84rarpi34b7x"]
 
-[ext_resource type="Script" uid="uid://bolat0xeudmow" path="res://fome.gd" id="1_lb8ys"]
+[ext_resource type="Script" uid="uid://bolat0xeudmow" path="res://Script/fome.gd" id="1_lb8ys"]
 [ext_resource type="FontFile" uid="uid://tgjj535b7evd" path="res://Rye-Regular.ttf" id="2_ppnyr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8jarx"]
@@ -16,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lb8ys")
+decrease_rate = 1.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0

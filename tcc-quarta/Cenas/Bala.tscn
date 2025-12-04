@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ctl7n8pu02afc" path="res://2Ds/Bala.png" id="2_r1v8s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7xaro"]
+size = Vector2(16, 17)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mghm4"]
 atlas = ExtResource("2_r1v8s")
@@ -42,6 +43,7 @@ use_gravity = false
 use_raycast = false
 
 [node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -0.5)
 shape = SubResource("RectangleShape2D_7xaro")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
