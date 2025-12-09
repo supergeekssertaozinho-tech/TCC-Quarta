@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://dfwev86h7m2qf"]
+[gd_scene load_steps=10 format=3 uid="uid://dfwev86h7m2qf"]
 
 [ext_resource type="Script" uid="uid://c1hqraavxudyu" path="res://Script/player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://bgam6kknedlk5" path="res://2Ds/Coxiry.png" id="2_4ntmi"]
 [ext_resource type="PackedScene" uid="uid://c84rarpi34b7x" path="res://Cenas/Fome.tscn" id="3_btcbx"]
+[ext_resource type="Texture2D" uid="uid://78fn84oq0kng" path="res://2Ds/bg.png" id="4_5p0qj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_btcbx"]
 atlas = ExtResource("2_4ntmi")
@@ -58,3 +59,8 @@ offset_left = -576.0
 offset_top = -288.0
 offset_right = -576.0
 offset_bottom = -288.0
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -2
+scale = Vector2(0.6010417, 0.6)
+texture = ExtResource("4_5p0qj")

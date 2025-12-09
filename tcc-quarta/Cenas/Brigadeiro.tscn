@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b0jf84ylu3im5" path="res://2Ds/Brigadeiro.png" id="2_qoo5l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7xaro"]
-size = Vector2(26, 28)
+size = Vector2(26, 29)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ype4"]
 atlas = ExtResource("2_qoo5l")
@@ -42,6 +42,7 @@ radius = 12.0
 script = ExtResource("1_qoo5l")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_7xaro")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
