@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=4 uid="uid://jayc3cbyxj3u"]
+[gd_scene load_steps=16 format=4 uid="uid://jayc3cbyxj3u"]
 
 [ext_resource type="Texture2D" uid="uid://d3nanbo6u41pb" path="res://2Ds/Tilemap-Sheet.png" id="1_gfjgm"]
 [ext_resource type="PackedScene" uid="uid://c6yqppxtq0aq8" path="res://Cenas/WWs.tscn" id="1_qfwnl"]
+[ext_resource type="AudioStream" uid="uid://c3xg4mbg8g66n" path="res://Sons/8bit-music-for-game-68698.mp3" id="3_q5v2k"]
 [ext_resource type="PackedScene" uid="uid://o06yrp7s3hfj" path="res://Cenas/Donut.tscn" id="6_aw2tl"]
 [ext_resource type="PackedScene" uid="uid://f0okr21ijibe" path="res://Cenas/Picole.tscn" id="6_osqm2"]
 [ext_resource type="PackedScene" uid="uid://cjpjsttyvm7hc" path="res://Cenas/Pudim.tscn" id="7_aw2tl"]
@@ -55,6 +56,12 @@ tile_set = SubResource("TileSet_epypp")
 [node name="Player" parent="." instance=ExtResource("9_g6fta")]
 position = Vector2(372, 337)
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="Player"]
+position = Vector2(-372, -337)
+stream = ExtResource("3_q5v2k")
+volume_db = 6.0
+autoplay = true
+
 [node name="kill zone" parent="." instance=ExtResource("8_fe0v8")]
 position = Vector2(5796, 923)
 
@@ -68,6 +75,9 @@ use_raycast = true
 
 [node name="Picole" parent="Enemies" instance=ExtResource("6_osqm2")]
 position = Vector2(5943, 800)
+
+[node name="Picole7" parent="Enemies" instance=ExtResource("6_osqm2")]
+position = Vector2(1099, 586)
 
 [node name="Pudim" parent="Enemies" instance=ExtResource("7_aw2tl")]
 position = Vector2(5681, 611)

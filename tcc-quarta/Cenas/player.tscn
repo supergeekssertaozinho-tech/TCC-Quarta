@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://dfwev86h7m2qf"]
+[gd_scene load_steps=14 format=3 uid="uid://dfwev86h7m2qf"]
 
 [ext_resource type="Script" uid="uid://c1hqraavxudyu" path="res://Script/player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://bgam6kknedlk5" path="res://2Ds/Coxiry.png" id="2_4ntmi"]
 [ext_resource type="PackedScene" uid="uid://c84rarpi34b7x" path="res://Cenas/Fome.tscn" id="3_btcbx"]
 [ext_resource type="Texture2D" uid="uid://78fn84oq0kng" path="res://2Ds/bg.png" id="4_5p0qj"]
+[ext_resource type="AudioStream" uid="uid://bfm15p4ae4jav" path="res://Sons/running-in-grass-6237.mp3" id="5_yuqgu"]
+[ext_resource type="AudioStream" uid="uid://8sn02kew5web" path="res://Sons/086398_game-die-81356.mp3" id="6_jx05c"]
+[ext_resource type="AudioStream" uid="uid://dyk4eqmw4wi45" path="res://Sons/pixel-jump-319167.mp3" id="7_8vhvd"]
+[ext_resource type="AudioStream" uid="uid://2yf2ik5ohyob" path="res://Sons/bonus-points-190035.mp3" id="8_e2nbm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_btcbx"]
 atlas = ExtResource("2_4ntmi")
@@ -64,3 +68,20 @@ offset_bottom = -288.0
 z_index = -2
 scale = Vector2(0.6010417, 0.6)
 texture = ExtResource("4_5p0qj")
+
+[node name="FootstepPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_yuqgu")
+volume_db = 8.361
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_jx05c")
+volume_db = 5.0
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_8vhvd")
+volume_db = -4.0
+
+[node name="CollectSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-1, -1)
+stream = ExtResource("8_e2nbm")
+volume_db = 2.0

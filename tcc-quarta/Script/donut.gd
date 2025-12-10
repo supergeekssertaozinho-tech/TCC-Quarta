@@ -5,6 +5,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player": 
 		if body.hunger_system: 
-			body.hunger_system.add_hunger(hunger_amount) 
+			body.hunger_system.add_hunger(hunger_amount)
+			body.collect_sound.play()
 		
 		queue_free()
